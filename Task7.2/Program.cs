@@ -34,10 +34,17 @@ int Find (int[,] array)
             break;
         }
         }
+        if(find > 0)
+            {
+                Console.WriteLine($"{find} -> число {find} существует в этом массиве");
+            }
+        else
+            {
+                Console.WriteLine($"{find} -> такого числа в массиве нет");
+            }
  
     }
-    return array;
+    return find;
 }
-
 PrintArray(array); 
 Console.WriteLine(Find(array));
